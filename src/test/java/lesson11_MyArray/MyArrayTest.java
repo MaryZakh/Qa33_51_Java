@@ -183,6 +183,22 @@ class MyArrayTest {
         testMyArray.add(200);
         testMyArray.add(300);
         assertFalse(numbers.removeAll(testMyArray2));
-
     }
-}
+
+    @Test
+    void testIterable() {
+//        Integer[] arExp1 = {10, 7, 11, -2, 13, 10, 2000};
+//        int i = 0;
+//        for (Object num : numbers) {
+//            assertEquals(arExp1[i++], num);
+            //==========================
+        MyArrayReverseIterator rIter = new MyArrayReverseIterator(numbers);
+        Integer[] arExp2 = {2000, 13, 11, 10};
+     int  i = 0;
+            while (rIter.hasNext()) {
+                assertEquals(arExp2[i++], rIter.next());
+            }
+       }
+    }
+
+

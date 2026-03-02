@@ -3,7 +3,8 @@ package lesson11_MyArray;
 
 import java.util.Comparator;
 
-public interface IMyArray {
+public interface IMyArray extends Iterable<Object> {
+
     boolean add(Object obj);
 
     Object get(int index);

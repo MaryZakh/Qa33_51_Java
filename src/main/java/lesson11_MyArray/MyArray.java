@@ -3,9 +3,10 @@ package lesson11_MyArray;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Iterator;
 
 
-public class MyArray implements IMyArray {
+public class MyArray implements IMyArray{
     private static final int INITIAL_SIZE = 16;
     private Object[] array;
     private int size = 0;
@@ -151,6 +152,13 @@ public class MyArray implements IMyArray {
                 remove(ind);
         }
         return oldSize != size;
+    }
+
+
+    @Override
+    public Iterator<Object> iterator() {
+        //return new MyArrayIterator(this);
+        return new MyArrayIterator2(toArray());
     }
 
 
