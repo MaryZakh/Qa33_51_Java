@@ -1,0 +1,35 @@
+package lesson11_MyArray;
+
+
+import java.util.Comparator;
+
+public interface IMyArray {
+    boolean add(Object obj);
+
+    Object get(int index);
+
+    boolean add(int index, Object obj);
+
+    int size();
+
+    Object remove(int index);
+
+    boolean remove(Object obj);
+
+    int indexOf(Object obj);
+
+    int lastIndexOf(Object obj);
+
+    boolean contains(Object obj);
+
+    Object[] toArray();
+
+    void sort(Comparator<Object> comp);
+
+    boolean addAll(MyArray other);
+
+    boolean removeAll(MyArray other);
+
+}
+
+
