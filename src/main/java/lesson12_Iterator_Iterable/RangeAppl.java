@@ -1,5 +1,8 @@
 package lesson12_Iterator_Iterable;
 
+import java.util.Date;
+import java.util.Iterator;
+
 public class RangeAppl {
 
     public static void main(String[] args) {
@@ -19,12 +22,24 @@ public class RangeAppl {
         System.out.println();
         //==================================
         RangeIterator iterator = new RangeIterator(range);
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
         System.out.println();
-    }
 
+        //=======================================
+        Iterator<Integer> iterRev = new RangeReverseIterator(range);
+        while (iterRev.hasNext()) {
+            System.out.print(iterRev.next() + " ");
+        }
+        System.out.println();
+        //=======================================
+        Iterator<Double> iterRev2 = new RangeReverseHalfIterator(range);
+        while (iterRev2.hasNext()) {
+            System.out.print(iterRev2.next() + " ");
+        }
+        System.out.println();
+    }
 
 }
 
