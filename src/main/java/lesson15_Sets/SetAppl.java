@@ -37,4 +37,6 @@ public class SetAppl {
     }
 
 
+    //1,2,14,32,11,3,6,10
+
 }
