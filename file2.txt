@@ -1,0 +1,12 @@
+Person{age=30, name='Vasya', id=12345}
+Person{age=23, name='Katya', id=23456}
+Person{age=45, name='Vanya', id=34567}
+Person{age=90, name='Egor', id=45678}
+Person{age=30, name='Vasya', id=12345}
+Person{age=23, name='Katya', id=23456}
+Person{age=45, name='Vanya', id=34567}
+Person{age=90, name='Egor', id=45678}
+Person{age=30, name='Vasya', id=12345}
+Person{age=23, name='Katya', id=23456}
+Person{age=45, name='Vanya', id=34567}
+Person{age=90, name='Egor', id=45678}
